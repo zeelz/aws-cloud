@@ -6,10 +6,10 @@ phases:
       nodejs: 18
   pre_build:
     commands:
-      - yarn install
+      - npm run install
   build:
     commands:
-      - yarn build
+      - npm run build
 
 artifacts:
   base-directory: build
