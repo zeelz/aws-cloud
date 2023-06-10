@@ -5,7 +5,8 @@
   "license": "MIT",
   "scripts": {
     "build": "tsc",
-    "start": "node build/index.js"
+    "start": "yarn install && tsc && node build/index.js",
+    "start:dev": "node build/index.js"
   },
   "dependencies": {
     "@types/express": "^4.17.17",
