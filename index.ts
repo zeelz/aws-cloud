@@ -1,9 +1,10 @@
-const express = require('express')
-require('dotenv').config()
+import express, {Express, Request, Response} from 'express'
+import { config } from 'dotenv'
+config()
 
-const app = express()
+const app: Express = express()
 
-app.get('/status', (req:any, res:any) => {
+app.get('/status', (req:Request, res:Response) => {
     res.json({status: 'healthy!!!'})
 })
 
