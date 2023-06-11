@@ -1,4 +1,4 @@
 #!/bin/bash
 sudo yum update
 sudo yum install nodejs -y
-sudo echo "export PORT=4005" >> ~/.bashrc
+# sudo echo "export PORT=4005" >> ~/.bashrc
