@@ -2,6 +2,7 @@
 # Install node.js and PM2 globally
 sudo yum update
 sudo yum install nodejs -y
+sudo npm install pm2 -g
 
 
 # FOR UBUNTU
