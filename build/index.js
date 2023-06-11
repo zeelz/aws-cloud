@@ -10,4 +10,4 @@ const app = (0, express_1.default)();
 app.get('/status', (req, res) => {
     res.json({ status: 'healthy!!!' });
 });
-app.listen(process.env.PORT, () => console.log('server running...'));
+app.listen(process.env.PORT, () => console.log('Server running...'));

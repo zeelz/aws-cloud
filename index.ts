@@ -8,4 +8,4 @@ app.get('/status', (req:Request, res:Response) => {
     res.json({status: 'healthy!!!'})
 })
 
-app.listen(process.env.PORT, () => console.log('server running...'))
+app.listen(process.env.PORT, () => console.log('Server running...'))
