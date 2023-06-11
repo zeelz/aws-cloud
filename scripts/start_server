@@ -1,3 +1,5 @@
 #!/bin/bash
-
+sudo chmod -R 777 /home/ec2-user/ts-express
+cd /home/ec2-user/ts-express
+sudo npm install
 node /home/ec2-user/ts-express/build/index.js > app.out.log 2> app.err.log < /dev/null &
