@@ -1,0 +1,4 @@
+#!/bin/bash
+cd /home/ec2-user/ts-express
+sudo chmod -R 777 ./
+sudo npm install
