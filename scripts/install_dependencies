@@ -2,3 +2,5 @@
 sudo yum update
 sudo yum install nodejs -y
 # sudo echo "export PORT=4005" >> ~/.bashrc
+sudo service codedeploy-agent stop
+sudo service codedeploy-agent start
