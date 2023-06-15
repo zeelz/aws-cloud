@@ -18,7 +18,7 @@ jobs:
         run: docker login -u $DOCKER_USERNAME -p $DOCKER_PASSWORD
 
       - name: Build the Docker image
-        run: docker build . --file Dockerfile --tag $DOCKER_USERNAME/simple-express-app
+        run: docker build . --file Dockerfile --tag ${DOCKER_USERNAME}/simple-express-app
 
       - name: Push Image to Docker Hub
-        run: docker push $DOCKER_USERNAME/simple-express-app:latest
+        run: docker push ${DOCKER_USERNAME}/simple-express-app:latest
