@@ -1,0 +1,12 @@
+version: "3.9"
+services:
+  node-express:
+    build: .
+    container_name: node-express
+    env_file:
+      - .env
+    ports:
+      - 5577:4433
+    restart: always
+# docker build -t node:latest .
+# docker run -p -e -e --name -d node:latest
