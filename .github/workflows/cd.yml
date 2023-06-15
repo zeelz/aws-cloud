@@ -20,4 +20,4 @@ jobs:
         run: sudo docker rm -f simple-express-app-container
 
       - name: Run Container
-        run: sudo docker run -d -p 4005:4433 -e PORT=4433 -name simple-express-app-container $DOCKER_USERNAME"/simple-express-app"
+        run: sudo docker run -d -p 4005:4433 -e PORT=4433 --name simple-express-app-container $DOCKER_USERNAME"/simple-express-app"
