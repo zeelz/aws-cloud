@@ -25,12 +25,11 @@ httpServer.listen(PORT, () => console.log('Server started at', PORT))
 
 app.get('/', (req, res) => {
     console.log('https will fail \'cos ssl isn\'t installed yet. just empty object');
-    const color = 'blue'
     const html = `
-        <h1 style="font-size: 5rem; display:flex; justify-content:center; align-item:center; block-size: 100vh; -webkit-text-fill-color:transparent; -webkit-background-clip:text; background-clip: text; background-image: linear(90deg, #00BCD4, #FF9800) "></h1>
+        <h1 style="font-size:5rem; display:flex; justify-content:center; align-items:center; block-size:100vh; -webkit-text-fill-color:transparent; -webkit-background-clip:text; background-clip: text; background-image: linear-gradient(90deg, #00BCD4, #FF9800);">CI/CD - express app - github to ec2</h1>
     `
 
-    res.send(`<body><h1 style="color: ${color}">foo bar</h1> ${script} </body>`).status(200)
+    res.send(html).status(200)
     
 })
 
