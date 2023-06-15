@@ -26,7 +26,8 @@ httpServer.listen(PORT, () => console.log('Server started at', PORT))
 app.get('/', (req, res) => {
     console.log('https will fail \'cos ssl isn\'t installed yet. just empty object');
     const html = `
-        <h1 style="font-size:4rem; display:flex; justify-content:center; align-items:center; block-size:100vh; -webkit-text-fill-color:transparent; -webkit-background-clip:text; background-clip: text; background-image: linear-gradient(90deg, #00BCD4, #FF9800);">CI/CD - express app - github action to ec2</h1>
+        <div style="block-size:100vh; display:flex; flex-direction:column; justify-content:center; align-items:center; margin-inline:auto;"><h1 style="font-size:4rem; margin-block:0; -webkit-text-fill-color:transparent; -webkit-background-clip:text; background-clip: text; background-image: linear-gradient(90deg, #00BCD4, #FF9800);">CI/CD - express app - github action to ec2</h1>
+        <p style="font-size:2rem;">better than CodeDeploy</p></div>
     `
 
     res.send(html).status(200)
