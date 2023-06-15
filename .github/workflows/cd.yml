@@ -6,7 +6,7 @@ on:
     types:
       - completed
 
-  runs_on: self-hosted
+  runs-on: self-hosted
   env:
     - DOCKER_USERNAME: ${{secrets.DOCKER_USERNAME}}
 
