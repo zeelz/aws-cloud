@@ -10,7 +10,7 @@ jobs:
   deploy:
     runs-on: self-hosted
     env:
-      - DOCKER_USERNAME: ${{secrets.DOCKER_USERNAME}}
+      DOCKER_USERNAME: ${{secrets.DOCKER_USERNAME}}
 
     steps:
       - name: Pull Image from Docker Hub
